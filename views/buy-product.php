@@ -34,11 +34,11 @@ $product = $product_obj->getProduct($product_id);
 
         <div class="row mb-3">
             <div class="col-md-6">
-                <p>Price</p>
+                <p>Price:</p>
                 <h2><?= $product['price']; ?></h2>
             </div>
             <div class="col-md-6">
-                <p>Stock Left</p>
+                <p>Stock Left:</p>
                 <h2><?= $product['quantity']; ?></h2>
             </div>
         </div>
@@ -48,7 +48,7 @@ $product = $product_obj->getProduct($product_id);
             <input type="hidden" name="price" value="<?= $product['price']; ?>">
             <div class="row mb-3">
                 <div class="col-md">
-                    <label for="buy-qty" class="form-label small text-secondary">Buy Quantity</label>
+                    <label for="buy-qty" class="form-label small text-secondary">Buy Quantity:</label>
                     <input type="number" name="buy_qty" id="buy-qty" class="form-control" min="1" max="<?= $product['quantity']; ?>">
                 </div>
             </div>
